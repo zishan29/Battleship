@@ -39,6 +39,14 @@ h1 {
 #buttons {
   grid-column: 1 / 2;
   grid-row: 3 / 4;
+  display: flex;
+  gap: 20px;
+}
+
+#buttons > button {
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 2px;
 }
 
 .game-board {
@@ -63,4 +71,93 @@ h1 {
   align-items: center;
   gap: 20px;
   justify-items: center;
+}
+
+.destroyer {
+  border: 2px solid black;
+  background-color: transparent;
+}
+
+.submarine {
+  border: 2px solid black;
+  background-color: transparent;
+}
+
+.cruiser {
+  border: 2px solid black;
+  background-color: transparent;
+}
+
+.battleship {
+  border: 2px solid black;
+  background-color: transparent;
+}
+
+.carrier {
+  border: 2px solid black;
+  background-color: transparent;
+}
+
+.destroyer-preview {
+  width: 60px;
+  height: 30px;
+  border: 2px solid black;
+  background-color: transparent;
+  cursor: grab;
+}
+
+.submarine-preview {
+  width: 90px;
+  height: 30px;
+  border: 2px solid black;
+  background-color: transparent;
+  cursor: grab;
+}
+
+.cruiser-preview {
+  width: 90px;
+  height: 30px;
+  border: 2px solid black;
+  background-color: transparent;
+  cursor: grab;
+}
+
+.battleship-preview {
+  width: 120px;
+  height: 30px;
+  border: 2px solid black;
+  background-color: transparent;
+  cursor: grab;
+}
+
+.carrier-preview {
+  width: 150px;
+  height: 30px;
+  border: 2px solid black;
+  background-color: transparent;
+  cursor: grab;
+}
+
+.hover {
+  background-color: gray;
+}
+
+#computer .destroyer,
+#computer .cruiser,
+#computer .submarine,
+#computer .battleship,
+#computer .carrier {
+  border: solid 0.5px rgb(201, 201, 201);
+}
+
+.boom {
+  background-color: red !important;
+  background-image: url('./icons/cross.png');
+  background-position: center;
+}
+
+.empty {
+  background: url('./icons/dot.png') no-repeat center;
+  background-size: 15px;
+  background-color: rgb(255, 255, 192);
 }
